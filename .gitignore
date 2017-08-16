@@ -1,11 +1,6 @@
 *.pyc
 output
-./data/formatted/
-./data/formatted_trainval/
-./data/original/shanghaitech/part_A_final/test_data/
-./data/original/shanghaitech/part_A_final/train_data/
-./data/original/shanghaitech/part_B_final/train_data/
-./data/original/shanghaitech/part_B_final/test_data/
+./data
 final_models
 saved_models
 *_epochs.py
