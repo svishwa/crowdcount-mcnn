@@ -34,10 +34,13 @@ This is an unofficial implementation of CVPR 2016 paper [["Single Image Crowd Co
    Save the model files under ROOT/final_models
    
 3. Run test.py
+	a. Set save_output = True to save output density maps
+	b. Errors are saved in  output directory
 
 # Training
 1. Follow steps 1,2,3 and 5 from Data Setup
 2. Run train.py
+
 
 # Training with TensorBoard
 With the aid of [Crayon](https://github.com/torrvision/crayon),
@@ -51,4 +54,12 @@ and set `use_tensorboard = True` in `ROOT/train.py`.
 1. During training, the best model is chosen using error on the validation set. (It is not clear how the authors in the original implementation choose the best model).
 2. 10% of the training set is set asised for validation. The validation set is chosen randomly.
 3. The ground truth density maps are obtained using simple gaussian maps unlike the original method described in the paper.
+4. Following are the results on  Shanghai Tech A and B dataset:
+				------------------------
+                |     |  MAE  |   MSE  |
+                ------------------------
+                | A   |  110  |   169  |
+                ------------------------
+                | B   |   25  |    44  |
+                ------------------------
 
