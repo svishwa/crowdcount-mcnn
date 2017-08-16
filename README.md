@@ -34,7 +34,9 @@ This is an unofficial implementation of CVPR 2016 paper [["Single Image Crowd Co
    Save the model files under ROOT/final_models
    
 3. Run test.py
+
 	a. Set save_output = True to save output density maps
+	
 	b. Errors are saved in  output directory
 
 # Training
