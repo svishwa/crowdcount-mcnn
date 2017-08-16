@@ -55,11 +55,11 @@ and set `use_tensorboard = True` in `ROOT/train.py`.
 2. 10% of the training set is set asised for validation. The validation set is chosen randomly.
 3. The ground truth density maps are obtained using simple gaussian maps unlike the original method described in the paper.
 4. Following are the results on  Shanghai Tech A and B dataset:
-				------------------------
+		
                 |     |  MAE  |   MSE  |
                 ------------------------
                 | A   |  110  |   169  |
                 ------------------------
                 | B   |   25  |    44  |
-                ------------------------
+               
 
