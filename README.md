@@ -13,11 +13,17 @@ This is an unofficial implementation of CVPR 2016 paper [["Single Image Crowd Co
 
 # Data Setup
 1. Download ShanghaiTech Dataset
-2. Save "part_A_final" under ROOT/data/original/shanghaitech
-3. Save "part_B_final" under ROOT/data/original/shanghaitech
-4. cd ROOT/data_preparation/
-   run create_gt_test_set_shtech.m in matlab to create ground truth files for test data
+2. Create Directory 
+  ```Shell
+  mkdir ROOT/data/original/shanghaitech/  
+  ```
+3. Save "part_A_final" under ROOT/data/original/shanghaitech/
+4. Save "part_B_final" under ROOT/data/original/shanghaitech/
 5. cd ROOT/data_preparation/
+
+   run create_gt_test_set_shtech.m in matlab to create ground truth files for test data
+6. cd ROOT/data_preparation/
+
    run create_training_set_shtech.m in matlab to create training and validataion set along with ground truth files
 
 # Test
