@@ -27,10 +27,13 @@ This is an unofficial implementation of CVPR 2016 paper ["Single Image Crowd Cou
    run create_training_set_shtech.m in matlab to create training and validataion set along with ground truth files
 
 # Test
-1. Follow steps 1,2 and 3 from Data Setup
+1. Follow steps 1,2,3,4 and 5 from Data Setup
 2. Download pre-trained model files:
+
    [[Shanghai Tech A](https://www.dropbox.com/s/8bxwvr4cj4bh5d8/mcnn_shtechA_660.h5?dl=0)]
+   
    [[Shanghai Tech B](https://www.dropbox.com/s/kqqkl0exfshsw8v/mcnn_shtechB_110.h5?dl=0)]
+   
    Save the model files under ROOT/final_models
    
 3. Run test.py
@@ -40,7 +43,7 @@ This is an unofficial implementation of CVPR 2016 paper ["Single Image Crowd Cou
 	b. Errors are saved in  output directory
 
 # Training
-1. Follow steps 1,2,3 and 5 from Data Setup
+1. Follow steps 1,2,3,4 and 6 from Data Setup
 2. Run train.py
 
 
