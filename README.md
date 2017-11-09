@@ -14,6 +14,7 @@ This is an unofficial implementation of CVPR 2016 paper ["Single Image Crowd Cou
 # Data Setup
 1. Download ShanghaiTech Dataset from   
    Dropbox:   https://www.dropbox.com/s/fipgjqxl7uj8hd5/ShanghaiTech.zip?dl=0
+   
    Baidu Disk: http://pan.baidu.com/s/1nuAYslz
 2. Create Directory 
   ```Shell
