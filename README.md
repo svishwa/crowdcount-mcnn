@@ -12,7 +12,9 @@ This is an unofficial implementation of CVPR 2016 paper ["Single Image Crowd Cou
 
 
 # Data Setup
-1. Download ShanghaiTech Dataset
+1. Download ShanghaiTech Dataset from   
+   Dropbox:   https://www.dropbox.com/s/fipgjqxl7uj8hd5/ShanghaiTech.zip?dl=0
+   Baidu Disk: http://pan.baidu.com/s/1nuAYslz
 2. Create Directory 
   ```Shell
   mkdir ROOT/data/original/shanghaitech/  
@@ -66,5 +68,7 @@ and set `use_tensorboard = True` in `ROOT/train.py`.
                 | A   |  110  |   169  |
                 ------------------------
                 | B   |   25  |    44  |
+		
+5. Also, please take a look at our new work on crowd counting using cascaded cnn and high-level prior (https://github.com/svishwa/crowdcount-cascaded-mtl),  which has improved results as compared to this work. 
                
 
