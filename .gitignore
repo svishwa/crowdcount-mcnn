@@ -1,6 +1,6 @@
 *.pyc
 output
-./data
+data/
 final_models
 saved_models
 *_epochs.py

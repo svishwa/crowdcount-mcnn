@@ -4,6 +4,7 @@
 % the training set is set aside for validation     %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+pkg load image;
 
 clc; clear all;
 seed = 95461354;

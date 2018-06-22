@@ -2,6 +2,8 @@
 % File to create grount truth density map for test set%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+pkg load image;
+
 
 clc; clear all;
 dataset = 'A';
