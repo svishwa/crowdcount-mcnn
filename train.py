@@ -3,12 +3,12 @@ import torch
 import numpy as np
 import sys
 
-from src.crowd_count import CrowdCounter
-from src import network
-from src.data_loader import ImageDataLoader
-from src.timer import Timer
-from src import utils
-from src.evaluate_model import evaluate_model
+from mcnn.crowd_count import CrowdCounter
+from mcnn import network
+from mcnn.data_loader import ImageDataLoader
+from mcnn.timer import Timer
+from mcnn import utils
+from mcnn.evaluate_model import evaluate_model
 
 try:
     from termcolor import cprint

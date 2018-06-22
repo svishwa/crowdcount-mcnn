@@ -1,8 +1,11 @@
-import numpy as np
-import cv2
+from __future__ import print_function
 import os
 import random
+
+import cv2
+import numpy as np
 import pandas as pd
+
 
 class ImageDataLoader():
     def __init__(self, data_path, gt_path, shuffle=False, gt_downsample=False, pre_load=False):
@@ -22,7 +25,7 @@ class ImageDataLoader():
         self.blob_list = {}        
         self.id_list = range(0,self.num_samples)
         if self.pre_load:
-            print 'Pre-loading the data. This may take a while...'
+            print('Pre-loading the data. This may take a while...')
             idx = 0
             for fname in self.data_files:
                 
@@ -30,8 +33,8 @@ class ImageDataLoader():
                 img = img.astype(np.float32, copy=False)
                 ht = img.shape[0]
                 wd = img.shape[1]
-                ht_1 = (ht/4)*4
-                wd_1 = (wd/4)*4
+                ht_1 = (ht//4)*4
+                wd_1 = (wd//4)*4
                 img = cv2.resize(img,(wd_1,ht_1))
                 img = img.reshape((1,1,img.shape[0],img.shape[1]))
                 den = pd.read_csv(os.path.join(self.gt_path,os.path.splitext(fname)[0] + '.csv'), sep=',',header=None).as_matrix()                        
@@ -53,9 +56,9 @@ class ImageDataLoader():
                 self.blob_list[idx] = blob
                 idx = idx+1
                 if idx % 100 == 0:                    
-                    print 'Loaded ', idx, '/', self.num_samples, 'files'
+                    print('Loaded ', idx, '/', self.num_samples, 'files')
                
-            print 'Completed Loading ', idx, 'files'
+            print('Completed Loading ', idx, 'files')
         
         
     def __iter__(self):
