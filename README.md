@@ -12,7 +12,9 @@ This is an unofficial implementation of CVPR 2016 paper ["Single Image Crowd Cou
 
 
 # Data Setup
-1. Download ShanghaiTech Dataset from   
+1. Download ShanghaiTech Dataset from
+   Google Drive:  https://drive.google.com/open?id=16dhJn7k4FWVwByRsQAEpl9lwjuV03jVI
+	
    Dropbox:   https://www.dropbox.com/s/fipgjqxl7uj8hd5/ShanghaiTech.zip?dl=0
    
    Baidu Disk: http://pan.baidu.com/s/1nuAYslz
